@@ -5,22 +5,20 @@ Created on Sat Jan 16 14:10:27 2021
 @author: Swapnil Sirsat
 """
 
-import turtle
-wn = turtle.Screen()
-wn.bgcolor("Black")
-wn.title("Turtle")
-skk = turtle.Turtle()
-skk.color("white")
-skk.write("B",move = False)
-skk.forward(700)
-skk.write("C",move = False)
-skk.left(150)
-skk.forward(800)
-skk.penup()
-skk.goto(0,0)
-skk.setheading(0)
-skk.pendown()
-skk.left(45)
-skk.forward(800)
-turtle.done()
-turtle.bye()
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+#the three equations of the line would be as
+# x = y
+# y = 0
+# root(3)y + 7 = x
+Y = [4,3,2,1,0]
+X = []
+for i in Y:
+    X.append((-math.sqrt(3))*i +7)
+print(Y)
+#
+plt.plot([0,1,2,3,4,5,6,7],[0, 0 , 0 , 0 , 0 , 0 , 0,0],label='$AB$',color = 'red')
+plt.plot([0,1,2,3,4,5],[0,1,2,3,4,5])
+plt.plot(X,Y)
+plt.show()
