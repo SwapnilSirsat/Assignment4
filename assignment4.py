@@ -18,7 +18,7 @@ for i in Y:
     X.append((-math.sqrt(3))*i +7)
 print(Y)
 #
-plt.plot([0,1,2,3,4,5,6,7],[0, 0 , 0 , 0 , 0 , 0 , 0,0],label='$AB$',color = 'red')
+plt.plot([0,1,2,3,4,5,6,7],[0, 0 , 0 , 0 , 0 , 0 , 0,0],color = 'red')
 plt.plot([0,1,2,3,4,5],[0,1,2,3,4,5])
 plt.plot(X,Y)
 plt.show()
